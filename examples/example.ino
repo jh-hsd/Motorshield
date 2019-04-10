@@ -1,12 +1,12 @@
 /* Motor shield library test */
 
-#include "motorshield.h"
+#include "Motorshield.h"
 
 #define DC_MOT_CURRENT MotorShield::MOT_A
 
 #define DC_MOT 1
-//#define DC_MOT_ADJUST 1
-#define DC_MOT_RUN 1
+#define DC_MOT_ADJUST 1
+//#define DC_MOT_RUN 1
 
 /* DC motor setup */
 #ifdef DC_MOT

@@ -1,7 +1,7 @@
 /* motor shield control library */
 
 #include "Arduino.h"
-#include "motorshield.h"
+#include "Motorshield.h"
 
 MotorShield::MotorShield(int dirAPin, int pwmAPin, int minPwmA,
                          int dirBPin, int pwmBPin, int minPwmB) {
