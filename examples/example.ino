@@ -31,10 +31,10 @@ void dcMotAdjustHelp() {
 
 void dcMotPrintStat() {
     Serial.print("Setup: Motor turns ");
-    Serial.print(mot.getDirection(DC_MOT_CURRENT) == MotorShield::CW ?
+    Serial.print(mot.direction(DC_MOT_CURRENT) == MotorShield::CW ?
                  "clock-wise" : "counter-clock-wise");
     Serial.print(" at ");
-    Serial.println(mot.getSpeed(DC_MOT_CURRENT));
+    Serial.println(mot.speed(DC_MOT_CURRENT));
 }
 
 void dcMotAdjust() {
@@ -58,11 +58,11 @@ void dcMotAdjust() {
             break;
         case '+':
             mot.setRawSpeed(DC_MOT_CURRENT,
-                            mot.getSpeed(DC_MOT_CURRENT) + 1);
+                            mot.speed(DC_MOT_CURRENT) + 1);
             break;
         case '-':
             mot.setRawSpeed(DC_MOT_CURRENT,
-                            mot.getSpeed(DC_MOT_CURRENT) - 1);
+                            mot.speed(DC_MOT_CURRENT) - 1);
             break;
         case 'o':
             mot.setRawSpeed(DC_MOT_CURRENT, 0);

@@ -35,7 +35,7 @@ void MotorShield::setDirection(Motor mot, MotorShield::State dir) {
     _update(motor);
 }
 
-MotorShield::State MotorShield::getDirection(Motor mot) const {
+MotorShield::State MotorShield::direction(Motor mot) const {
     const struct MotorDefinition &motor = _const_motor(mot);
 
     return motor.dir;
@@ -92,7 +92,7 @@ void MotorShield::setSpeed(Motor mot, int speed, int duration) {
     _update(motor);
 }
 
-int MotorShield::getSpeed(Motor mot) const {
+int MotorShield::speed(Motor mot) const {
     const struct MotorDefinition &motor = _const_motor(mot);
 
     return motor.speed;

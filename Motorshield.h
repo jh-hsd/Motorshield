@@ -30,7 +30,7 @@ class MotorShield {
                     int dirBPin, int pwmBPin, int minPwmB);
 
         void setDirection(Motor mot, MotorShield::State dir);
-        MotorShield::State getDirection(Motor mot) const;
+        MotorShield::State direction(Motor mot) const;
 
         /* adjust speed
            mot: Motor selection
@@ -44,7 +44,7 @@ class MotorShield {
         void setSpeed(Motor mot, int speed, int duration = 0);
         /* returns either raw speed value (duty-cycle) or 
            percent value depending on the setSpeed method used */
-        int getSpeed(Motor mot) const;
+        int speed(Motor mot) const;
  
     private:
         struct MotorDefinition {
