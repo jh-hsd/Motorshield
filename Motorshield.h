@@ -1,4 +1,4 @@
-/* L298N motor control library */
+// L298N motor control library
 
 #ifndef MOTORSHIELD_h
 #define MOTORSHIELD_h
@@ -6,14 +6,14 @@
 class MotorShield {
     public:
         enum State {
-            OFF, /* motor off */
-            CW,  /* turn clock-wise */
-            CCW, /* turn counter clock wise */
+            OFF, // motor off
+            CW,  // turn clock-wise
+            CCW, // turn counter clock wise
         };
 
         enum Motor {
-            MOT_A, /* motor A */
-            MOT_B,  /* motor B */
+            MOT_A, // motor A
+            MOT_B,  // motor B
         };
 
         /* initialize motor class
@@ -42,10 +42,10 @@ class MotorShield {
            speed: in percent (0-100)
            duration: speed ramp is in milli seconds */
         void setSpeed(Motor mot, int speed, int duration = 0);
-        /* returns either raw speed value (duty-cycle) or 
+        /* returns either raw speed value (duty-cycle) or
            percent value depending on the setSpeed method used */
         int speed(Motor mot) const;
- 
+
     private:
         struct MotorDefinition {
             int dirPin;
@@ -61,7 +61,7 @@ class MotorShield {
         void _off(struct MotorShield::MotorDefinition &motor);
         void _update(struct MotorShield::MotorDefinition &motor);
 
-        /* pins */
+        // pins
         struct MotorDefinition _motA;
         struct MotorDefinition _motB;
 };
