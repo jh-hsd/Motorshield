@@ -1,4 +1,4 @@
-## A library to use the Motorshield
+## An Arduino library to use the Motorshield
 
 ![Image of motorshield board](/motorshield.png?raw=true)
 
