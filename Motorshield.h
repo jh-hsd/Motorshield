@@ -1,4 +1,8 @@
-// L298N motor control library
+/* Motorshield motor control library
+ *
+ * Adds support for DC (2 per shield) and stepper motors (1 per
+ * shield, 4-wire)
+ */
 
 #ifndef MOTORSHIELD_h
 #define MOTORSHIELD_h
