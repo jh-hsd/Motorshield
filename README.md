@@ -1,10 +1,10 @@
 ## An Arduino library to use the Motorshield
 
-[Features](#Features)
-[Wire a DC motor](#Wire-a-DC-motor)
-[Wire a stepper motor](#Wire-a-stepper-motor)
-[Installation](#Installation)
-[Build and run example](#Build-and-run-example)
+[| Features | ](#Features)
+[Wire a DC motor | ](#Wire-a-DC-motor)
+[Wire a stepper motor | ](#Wire-a-stepper-motor)
+[Installation | ](#Installation)
+[Build and run example |](#Build-and-run-example)
 
 ### Features
 * Support for DC motors (2 per chield)
